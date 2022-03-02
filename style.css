@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(44, 42, 44);
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter-form input {
+    width: 400px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.filter-form button {
+    margin-left: 16px;
+    padding: 16px 16px;
+    color: white;
+    font-weight: 600;
+    background: none;
+    border: 3px solid rgb(88, 193, 235);
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.filter-form button:hover{
+    background: rgb(88, 193, 235);
+    color: black;
+    transition: .3s ease;
+}
+
+.filter-form span {
+    color: white;
+    margin-right: 16px;
+}
+
+#items-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#items-list img {
+    border: 5px solid rgb(44, 42, 42);
+    
+    max-width: 250px;
+    max-height: 300px;
+}
+
+#items-list h2 {
+    height: 50px;
+}
+
+#items-list h3 {
+    margin-top: 16px;
+}
+
+#items-list p {
+    margin-top: 8px;
+}
+
+.item {
+    padding: 30px;
+    color: white;
+}
+
+figure {
+    max-width: 200px;
+}
+
+#category-tabs {
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none; 
+    display: flex;
+}
+
+#category-tabs a {
+    padding: 30px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+
+    transition: .5s ease;
+}
+
+#category-tabs a:hover {
+    color: rgb(88, 193, 235);
+    outline: 2px solid rgb(88, 193, 235);
+    outline-offset: -3px;
+    transform: scale(1.1);
+
+    transition: .5s ease;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.page {
+    padding: 30px;
+    background-color: black;
+}
+
+.page a {
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(88, 193, 235);
+}
+
+.form-price {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+}
+
+.price input {
+    outline: none;
+    max-width: 60px;
+    max-height: 20px;
+}
+
